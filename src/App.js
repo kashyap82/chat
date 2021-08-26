@@ -32,6 +32,16 @@ function App() {
               </a>
             </div>
           </div>
+          <div className="mt-3 py-3">
+            <div className="d-flex">
+              <p className="fw-bolder pr6">&#9830;</p>
+              <p className="fw-bolder">Open the WhatsApp chat window for a number without saving the number.</p>
+            </div>
+            <div className="d-flex">
+              <p className="fw-bolder pr6">&#9830;</p>
+              <p className="fw-bolder">बिना नंबर सेव किए किसी नंबर के लिए WhatsApp Chat खोलें|</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
