@@ -20,7 +20,7 @@ function App() {
                   type="number"
                   className="form-control"
                   id="mobile"
-                  placeholder="Enter mobile with country code"
+                  placeholder="Enter mobile num. with country code"
                   onChange={(e) => setMobile(e.target.value)}
                 />
                 <small className="text-muted font-weight-lighter">
