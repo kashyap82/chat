@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import WhatsAppImg from './whatsapp.png';
 import './App.css';
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 function App() {
   const [mobile, setMobile] = useState("");
@@ -16,18 +18,28 @@ function App() {
             <div className="card p-3">
               <div className="form-group">
                 <label className="mb-1" for="mobile">Mobile Number</label>
-                <input
+                {/* <input
                   type="number"
                   className="form-control"
                   id="mobile"
                   placeholder="Enter mobile num. with country code"
                   onChange={(e) => setMobile(e.target.value)}
+                /> */}
+                <PhoneInput
+                  inputClass="w-100 cusInputStyle"
+                  country={'in'}
+                  value={mobile}
+                  onChange={mobile => setMobile(mobile)}
                 />
                 <small className="text-muted font-weight-lighter">
                   Format: 91##########
                 </small>
               </div>
-              <a className="btn btn-success mt-4" target="_blank" href={`http://wa.me/${mobile}`} rel="noreferrer">
+              <a
+                className={`btn btn-success mt-4 fw6 ${mobile?.length > 6 ? '' : 'disabled'}`} target="_blank"
+                href={`http://wa.me/${mobile}`}
+                rel="noreferrer"
+              >
                 Chat on WhatsApp
               </a>
             </div>
