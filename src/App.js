@@ -3,10 +3,11 @@ import WhatsAppImg from './whatsapp.png';
 import './App.css';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-
+import { isBrowser } from "react-device-detect";
 function App() {
   const [mobile, setMobile] = useState("");
 
+  console.log('isBrowser', isBrowser);
   return (
     <div className="container mt-2">
       <div className="row justify-content-center">
@@ -26,8 +27,9 @@ function App() {
                 />
               </div>
               <a
-                className={`btn btn-success mt-4 fw6 ${mobile?.length > 6 ? '' : 'disabled'}`} target="_blank"
-                href={`http://wa.me/${mobile}`}
+                className={`btn btn-success mt-4 fw6 ${mobile?.length > 6 ? '' : 'disabled'}`}
+                target="_blank"
+                href={isBrowser ? `https://web.whatsapp.com/send?phone=${mobile}` : `http://wa.me/${mobile}`}
                 rel="noreferrer"
               >
                 Chat on WhatsApp
