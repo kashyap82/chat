@@ -4,6 +4,9 @@ p,
 span {
   font-family: "Roboto", sans-serif;
 }
+.fw5 {
+  font-weight: 500;
+}
 .fw6 {
   font-weight: 600;
 }
