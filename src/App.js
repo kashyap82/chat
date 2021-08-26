@@ -6,7 +6,7 @@ function App() {
   const [mobile, setMobile] = useState("");
 
   return (
-    <div className="container">
+    <div className="container mt-2">
       <div className="row justify-content-center">
         <div className="col-md-8">
           <div className="text-center">
@@ -35,12 +35,15 @@ function App() {
           <div className="mt-3 py-3">
             <div className="d-flex">
               <p className="fw-bolder pr6">&#9830;</p>
-              <p className="fw-bolder">Open the WhatsApp chat window for a number without saving the number.</p>
+              <p className="fw-bolder">
+                Open the WhatsApp chat window for a number without saving the number.
+              </p>
             </div>
             <div className="d-flex">
               <p className="fw-bolder pr6">&#9830;</p>
               <p className="fw-bolder">बिना नंबर सेव किए किसी नंबर के लिए WhatsApp Chat खोलें|</p>
             </div>
+            <p className="fw-bolder mt-5 text-center">- - -</p>
           </div>
         </div>
       </div>
