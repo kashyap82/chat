@@ -17,21 +17,14 @@ function App() {
           <div className="card p-3 mt-1">
             <div className="card p-3">
               <div className="form-group">
-                <label className="mb-1" for="mobile">Mobile Number</label>
-                {/* <input
-                  type="number"
-                  className="form-control"
-                  id="mobile"
-                  placeholder="Enter mobile num. with country code"
-                  onChange={(e) => setMobile(e.target.value)}
-                /> */}
+                <label className="mb-1 fw6" for="mobile">Enter Mobile Number</label>
                 <PhoneInput
                   inputClass="w-100 cusInputStyle"
                   country={'in'}
                   value={mobile}
                   onChange={mobile => setMobile(mobile)}
                 />
-                <small className="text-muted font-weight-lighter">
+                <small className="text-muted font-weight-lighter mt-2 fw6">
                   Format: 91##########
                 </small>
               </div>
