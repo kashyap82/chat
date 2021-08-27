@@ -21,6 +21,7 @@ function App() {
                 <label className="mb-1 fw6" for="mobile">Enter Mobile Number</label>
                 <PhoneInput
                   inputClass="w-100 cusInputStyle"
+                  placeholder="91 80437-54330"
                   country={'in'}
                   value={mobile}
                   onChange={mobile => setMobile(mobile)}
